@@ -225,7 +225,7 @@ function App() {
               <div>
                 <div id="block-gt-page-title">
                   <div id="gt-page-title" role="heading" aria-level="1">
-                    <h1 class="page-title"><span property="schema:name">Payroll</span></h1>
+                    <h1 class="page-title gt-font-color-phish-1"><span property="schema:name">Payroll</span></h1>
                   </div>
                 </div>
               </div>
@@ -256,7 +256,7 @@ function App() {
                                 <img loading="lazy" src="https://hr.gatech.edu/sites/default/files/2022-07/payroll_header_updated%201.png" width="1149" height="405" alt="The payroll unit manages paycheck processing, requesting and reporting time, as well as processing deductions and taxes." typeof="foaf:Image" />
                               </div>
                             </div>
-                            <div class="my-3 pt-2 heading-title clearfix block block-layout-builder block-inline-blockheading-title">
+                            <div class="my-3 pt-2 heading-title gt-font-color-phish-2 clearfix block block-layout-builder block-inline-blockheading-title">
                               <h2 class="mt-1">Payroll Upgrade - Verify Your Direct Deposit Data Now</h2>                            
                             </div>
                             <div class="bootstrap-iso">
